@@ -1,14 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Webpage</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Remocat - Phone Security</title>
+
+  <!-- Roboto font, tipica di Material Design -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* Color palette from your Android XML */
+    :root {
+      --black: #000000;
+      --light-black: #1c1d21;
+      --white: #ffffff;
+      --grey: #3d3c40;
+      --transparent-grey: rgba(211, 211, 211, 0.16);
+      --sombre-transparent-grey: rgba(211, 211, 211, 0.87);
+      --sombre-grey: rgba(217, 217, 217, 0.18);
+      --light-grey: #959595;
+      --teal-green: #17cf96;
+      --green-slate: #fc2f413f;
+      --green-slate-light: #fc489285;
+      --red: #e2220d;
+      --purple: #e040fb;
+
+      /* Material 3 inspired colors */
+      --primary-color: var(--teal-green);
+      --on-primary-color: var(--white);
+      --secondary-color: var(--sombre-transparent-grey);
+      --on-secondary-color: var(--white);
+      --surface-color: var(--sombre-transparent-grey);
+      --on-surface-color: var(--black);
+      --error-color: var(--red);
+      --on-error-color: var(--white);
+      --background-color: var(--white);
+      --text-color: var(--black);
+      --hint-text-color: var(--grey);
+
+      /* For buttons */
+      --button-bg-color: var(--light-grey);
+      --button-text-color: var(--white);
+    }
+
+    /* Reset & base */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: var(--on-primary-color);
+      padding: 1.5rem 1rem;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 1.8rem;
+      letter-spacing: 0.05em;
+    }
+
+    main {
+      flex: 1;
+      padding: 2rem 1rem;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      color: var(--primary-color);
+      font-weight: 700;
+      margin-top: 0;
+    }
+
+    p {
+      margin: 1rem 0;
+      color: var(--text-color);
+      font-size: 1.1rem;
+    }
+
+    /* Card style */
+    .card {
+      background-color: var(--surface-color);
+      color: var(--on-surface-color);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    /* Button style */
+    .btn-primary {
+      display: inline-block;
+      background-color: var(--primary-color);
+      color: var(--on-primary-color);
+      font-weight: 700;
+      padding: 0.8rem 1.6rem;
+      border: none;
+      border-radius: 24px;
+      cursor: pointer;
+      font-size: 1rem;
+      text-decoration: none;
+      text-align: center;
+      transition: background-color 0.3s ease;
+      user-select: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #13b47c; /* Slightly darker teal */
+    }
+
+    footer {
+      background-color: var(--light-black);
+      color: var(--grey);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 480px) {
+      main {
+        padding: 1rem;
+      }
+      header h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1>This is a Heading</h1>
-    <p>This is a paragraph of text.</p>
-    <a href="https://www.example.com">This is a link</a>
-    <img src="image.jpg" alt="An example image" width="200" height="150">
+  <header>
+    <h1>Remocat</h1>
+    <p>Phone Security You Can Trust</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>About Remocat</h2>
+      <p>Remocat is a state-of-the-art security app designed to protect your phone by recognizing unauthorized users with advanced facial recognition technology.</p>
+    </section>
+
+    <section class="card">
+      <h2>Features</h2>
+      <ul>
+        <li>Real-time face recognition using AI embeddings</li>
+        <li>Instant alerts on unauthorized access attempts</li>
+        <li>Secure and private: all data stays on your device</li>
+        <li>Customizable security settings for your peace of mind</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Get Started</h2>
+      <p>Download Remocat on your Android device and take control of your phone security today!</p>
+      <a href="#" class="btn-primary" aria-label="Download Remocat app">Download Now</a>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Remocat. All rights reserved.
+  </footer>
 </body>
 </html>
