@@ -1,138 +1,239 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Privacy Policy - Remocat</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 2rem;
-            line-height: 1.6;
-            color: #222;
-        }
-        h1, h2, h3 {
-            font-weight: 700;
-            color: #333;
-        }
-        h1 {
-            font-size: 2.2rem;
-            margin-bottom: 1rem;
-        }
-        h2 {
-            font-size: 1.6rem;
-            margin-top: 2rem;
-            margin-bottom: 0.8rem;
-        }
-        h3 {
-            font-size: 1.3rem;
-            margin-top: 1.5rem;
-            margin-bottom: 0.5rem;
-        }
-        p, ul {
-            margin-bottom: 1rem;
-        }
-        ul {
-            padding-left: 1.5rem;
-        }
-        li {
-            margin-bottom: 0.3rem;
-        }
-        strong {
-            font-weight: 700;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Remocat - Privacy Policy</title>
+
+  <!-- Roboto font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --black: #000000;
+      --light-black: #1c1d21;
+      --white: #ffffff;
+      --grey: #3d3c40;
+      --transparent-grey: rgba(211, 211, 211, 0.16);
+      --sombre-transparent-grey: rgba(211, 211, 211, 0.87);
+      --sombre-grey: rgba(217, 217, 217, 0.18);
+      --light-grey: #959595;
+      --teal-green: #17cf96;
+      --green-slate: #fc2f413f;
+      --green-slate-light: #fc489285;
+      --red: #e2220d;
+      --purple: #e040fb;
+
+      --primary-color: var(--teal-green);
+      --on-primary-color: var(--white);
+      --surface-color: var(--sombre-transparent-grey);
+      --on-surface-color: var(--black);
+      --background-color: var(--white);
+      --text-color: var(--black);
+      --hint-text-color: var(--grey);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: var(--on-primary-color);
+      padding: 1.5rem 1rem;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 1.8rem;
+      letter-spacing: 0.05em;
+    }
+
+    header p {
+      margin: 0;
+      font-weight: 400;
+      font-size: 1rem;
+    }
+
+    main {
+      flex: 1;
+      padding: 2rem 1rem;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    h1, h2, h3 {
+      color: var(--primary-color);
+      font-weight: 700;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-top: 0;
+    }
+
+    p {
+      margin: 1rem 0;
+      font-size: 1.1rem;
+      color: var(--text-color);
+      white-space: pre-wrap;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+      margin: 1rem 0 1rem 0;
+      color: var(--text-color);
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    footer {
+      background-color: var(--light-black);
+      color: var(--grey);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    a.email-link {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    a.email-link:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 480px) {
+      main {
+        padding: 1rem;
+      }
+      header h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>Remocat</h1>
+    <p>Privacy Policy</p>
+  </header>
+
+  <main>
     <h1>Privacy Policy</h1>
-    <p><strong>Last updated:</strong> April 22, 2025</p>
+    <p><strong>Ultimo aggiornamento:</strong> 22 aprile 2025</p>
 
-    <p>Thank you for choosing <strong>Remocat</strong>. Your privacy is very important to us. This Privacy Policy explains how we collect, use, disclose, and protect your personal data when you use our Service.</p>
+    <p>Grazie per aver scelto <strong>Remocat</strong>. La tua privacy è molto importante per noi. Questa Privacy Policy spiega come raccogliamo, utilizziamo, divulghiamo e proteggiamo i tuoi dati personali quando utilizzi il nostro Servizio.</p>
 
-    <p>By using Remocat, you agree to the collection and use of your information in accordance with this Privacy Policy. Please read it carefully to understand our practices.</p>
+    <p>Utilizzando Remocat, accetti la raccolta e l'uso delle tue informazioni in conformità con questa Privacy Policy. Ti invitiamo a leggerla attentamente per comprendere le nostre pratiche.</p>
 
-    <h2>1. Definitions</h2>
-    <p>For the purpose of this Privacy Policy, the following terms have the meanings set out below:</p>
+    <h2>1. Definizioni</h2>
+    <p>Ai fini di questa Privacy Policy, i seguenti termini hanno il significato indicato di seguito:</p>
     <ul>
-        <li><strong>Account:</strong> A unique account created for you to access our Service or parts of it.</li>
-        <li><strong>Application:</strong> Refers to Remocat, the software program provided by the Company.</li>
-        <li><strong>Company:</strong> Refers to Remocat, "We", "Us" or "Our".</li>
-        <li><strong>Device:</strong> Any device capable of accessing the Service such as a smartphone, tablet, or computer.</li>
-        <li><strong>Personal Data:</strong> Any information relating to an identified or identifiable individual.</li>
-        <li><strong>Service:</strong> The Remocat Application.</li>
-        <li><strong>Service Provider:</strong> Third parties processing data on our behalf.</li>
-        <li><strong>You:</strong> The individual or entity using the Service.</li>
+      <li><strong>Account:</strong> Un account univoco creato per accedere al nostro Servizio o a sue parti.</li>
+      <li><strong>Applicazione:</strong> Si riferisce a Remocat, il programma software fornito dalla Società.</li>
+      <li><strong>Società:</strong> Si riferisce a Remocat, "Noi", "Ci" o "Nostro".</li>
+      <li><strong>Dispositivo:</strong> Qualsiasi dispositivo in grado di accedere al Servizio, come smartphone, tablet o computer.</li>
+      <li><strong>Dati Personali:</strong> Qualsiasi informazione relativa a una persona identificata o identificabile.</li>
+      <li><strong>Servizio:</strong> L'applicazione Remocat.</li>
+      <li><strong>Fornitore di Servizi:</strong> Terze parti che elaborano dati per nostro conto.</li>
+      <li><strong>Utente:</strong> L'individuo o entità che utilizza il Servizio.</li>
     </ul>
 
-    <h2>2. Information We Collect</h2>
-    <h3>2.1 Personal Data</h3>
-    <p>When using Remocat, we may ask you to provide certain personal information, such as:</p>
+    <h2>2. Informazioni che Raccogliamo</h2>
+    <h3>2.1 Dati Personali</h3>
+    <p>Quando usi Remocat, potremmo chiederti di fornire alcune informazioni personali, quali:</p>
     <ul>
-        <li>Email address</li>
-        <li>First and last name</li>
-        <li>Phone number</li>
-        <li>Usage Data (e.g., IP address, device information, app usage details)</li>
+      <li>Indirizzo email</li>
+      <li>Nome e cognome</li>
+      <li>Numero di telefono</li>
+      <li>Dati di utilizzo (ad esempio indirizzo IP, informazioni sul dispositivo, dettagli sull'uso dell'app)</li>
     </ul>
 
-    <h3>2.2 Usage Data</h3>
-    <p>We automatically collect information about how you interact with the Service, including device type, operating system, browser type, and usage patterns.</p>
+    <h3>2.2 Dati di Utilizzo</h3>
+    <p>Raccogliamo automaticamente informazioni su come interagisci con il Servizio, inclusi tipo di dispositivo, sistema operativo, tipo di browser e modalità di utilizzo.</p>
 
-    <h3>2.3 Information from Your Device</h3>
-    <p>With your permission, Remocat may access your device’s camera and photo library to enable facial recognition features. This data may be stored on your device or on our servers as necessary to provide the Service.</p>
-    <p>You can revoke these permissions anytime in your device settings.</p>
+    <h3>2.3 Informazioni dal Tuo Dispositivo</h3>
+    <p>Con il tuo permesso, Remocat può accedere alla fotocamera e alla galleria del dispositivo per abilitare le funzionalità di riconoscimento facciale. Questi dati possono essere memorizzati sul dispositivo o sui nostri server, se necessario per fornire il Servizio.</p>
+    <p>Puoi revocare questi permessi in qualsiasi momento dalle impostazioni del dispositivo.</p>
 
-    <h2>3. How We Use Your Data</h2>
-    <p>We use your personal data for purposes including, but not limited to:</p>
+    <h2>3. Come Usiamo i Tuoi Dati</h2>
+    <p>Utilizziamo i tuoi dati personali per scopi tra cui, ma non solo:</p>
     <ul>
-        <li>Providing and maintaining the Service</li>
-        <li>Managing your Account</li>
-        <li>Communicating important updates and security notifications</li>
-        <li>Improving our Service through analysis of usage trends</li>
-        <li>Complying with legal obligations and enforcing our agreements</li>
+      <li>Fornire e mantenere il Servizio</li>
+      <li>Gestire il tuo Account</li>
+      <li>Comunicare aggiornamenti importanti e notifiche di sicurezza</li>
+      <li>Migliorare il nostro Servizio analizzando le tendenze di utilizzo</li>
+      <li>Rispettare obblighi legali e far valere i nostri accordi</li>
     </ul>
-    <p>We do <strong>not</strong> use your biometric data for marketing or profiling purposes, and we do <strong>not</strong> share it with third parties except as described below.</p>
+    <p>Non usiamo i tuoi dati biometrici per scopi di marketing o profilazione, e non li condividiamo con terzi salvo quanto descritto di seguito.</p>
 
-    <h2>4. Sharing Your Information</h2>
-    <p>Your information may be shared with:</p>
+    <h2>4. Condivisione delle Tue Informazioni</h2>
+    <p>Le tue informazioni possono essere condivise con:</p>
     <ul>
-        <li><strong>Service Providers</strong> who assist in delivering and maintaining the Service</li>
-        <li><strong>Affiliates</strong> within the Remocat group, under strict privacy commitments</li>
-        <li><strong>Business partners</strong> offering related products or promotions</li>
-        <li><strong>Other users</strong> in public areas, only if you voluntarily share information</li>
-        <li><strong>Authorities</strong>, if required by law or to protect our rights</li>
+      <li><strong>Fornitori di Servizi</strong> che assistono nella fornitura e manutenzione del Servizio</li>
+      <li><strong>Affiliati</strong> del gruppo Remocat, sotto rigorosi impegni di riservatezza</li>
+      <li><strong>Partner commerciali</strong> che offrono prodotti o promozioni correlate</li>
+      <li><strong>Altri utenti</strong> in aree pubbliche, solo se condividi volontariamente le informazioni</li>
+      <li><strong>Autorità competenti</strong>, se richiesto dalla legge o per proteggere i nostri diritti</li>
     </ul>
-    <p>We do not sell your personal data.</p>
+    <p>Non vendiamo i tuoi dati personali.</p>
 
-    <h2>5. Data Retention and Security</h2>
-    <p>We retain your personal data only as long as necessary to provide our Service and to comply with legal obligations.</p>
-    <p>We implement industry-standard security measures to protect your data, but no system is completely secure. You are encouraged to keep your devices protected and updated.</p>
+    <h2>5. Conservazione e Sicurezza dei Dati</h2>
+    <p>Conserviamo i tuoi dati personali solo per il tempo necessario a fornire il nostro Servizio e per rispettare obblighi legali.</p>
+    <p>Adottiamo misure di sicurezza standard di settore per proteggere i dati, ma nessun sistema è completamente sicuro. Ti consigliamo di mantenere i tuoi dispositivi protetti e aggiornati.</p>
 
-    <h2>6. Your Rights</h2>
-    <p>You have the right to:</p>
+    <h2>6. I Tuoi Diritti</h2>
+    <p>Hai il diritto di:</p>
     <ul>
-        <li>Access, update, or delete your personal data</li>
-        <li>Withdraw consent for data processing at any time</li>
-        <li>Request assistance in deleting your data by contacting us</li>
+      <li>Accedere, aggiornare o cancellare i tuoi dati personali</li>
+      <li>Ritirare il consenso al trattamento in qualsiasi momento</li>
+      <li>Richiedere assistenza nella cancellazione dei dati contattandoci</li>
     </ul>
-    <p>Please note that some data may be retained as required by law.</p>
+    <p>Alcuni dati potrebbero essere conservati se richiesto dalla legge.</p>
 
-    <h2>7. International Data Transfers</h2>
-    <p>Your data may be processed and stored outside your country, including in jurisdictions with different data protection laws. We ensure appropriate safeguards are in place to protect your data.</p>
+    <h2>7. Trasferimenti Internazionali di Dati</h2>
+    <p>I tuoi dati possono essere elaborati e archiviati al di fuori del tuo paese, inclusi paesi con leggi sulla protezione dati diverse. Garantiamo adeguate misure di sicurezza per tutelare i tuoi dati.</p>
 
-    <h2>8. Children's Privacy</h2>
-    <p>Our Service is <strong>not</strong> intended for children under 13. We do not knowingly collect personal data from children under this age. If you believe we have collected such data, please contact us immediately.</p>
+    <h2>8. Privacy dei Minori</h2>
+    <p>Il nostro Servizio non è destinato a minori di 13 anni. Non raccogliamo consapevolmente dati personali di bambini sotto questa età. Se credi che abbiamo raccolto tali dati, contattaci immediatamente.</p>
 
-    <h2>9. Links to Other Websites</h2>
-    <p>Remocat may contain links to third-party websites. We are not responsible for their privacy practices. We encourage you to review their policies before providing any personal information.</p>
+    <h2>9. Link ad Altri Siti</h2>
+    <p>Remocat può contenere link a siti di terze parti. Non siamo responsabili delle loro pratiche sulla privacy. Ti consigliamo di leggere le loro politiche prima di fornire informazioni personali.</p>
 
-    <h2>10. Changes to This Privacy Policy</h2>
-    <p>We may update this Privacy Policy occasionally. We will notify you of significant changes by posting the updated policy within the app or by email. Please review it regularly.</p>
+    <h2>10. Modifiche a Questa Privacy Policy</h2>
+    <p>Possiamo aggiornare questa Privacy Policy di tanto in tanto. Notificheremo cambiamenti significativi pubblicando la nuova policy nell'app o via email. Ti invitiamo a rivederla regolarmente.</p>
 
-    <h2>11. Contact Us</h2>
-    <p>If you have questions or concerns about this Privacy Policy, please contact us at:</p>
-    <p><strong>crescenziaziendale@gmail.com</strong></p>
+    <h2>11. Contattaci</h2>
+    <p>Per domande o dubbi riguardanti questa Privacy Policy, contattaci a:</p>
+    <p><a href="mailto:crescenziaziendale@gmail.com" class="email-link">crescenziaziendale@gmail.com</a></p>
 
-    <p>Thank you for choosing Remocat. Your privacy is our priority.</p>
+    <p>Grazie per aver scelto Remocat. La tua privacy è la nostra priorità.</p>
+  </main>
+
+  <footer>
+    &copy; 2025 Remocat. Tutti i diritti riservati.
+  </footer>
 </body>
 </html>
-
